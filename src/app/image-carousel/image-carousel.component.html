@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="search">
+    <p>Find images that contains: </p>
+    <span class="p-input-icon-right">
+    <i class="pi pi-search"></i>
+    <input type="text" placeholder="Item to find" pInputText [(ngModel)]="value"/>
+    </span>
+    <p-button icon="pi pi-check" (onClick)="getImages()"></p-button>
+  </div>
+
+  <p-carousel [value]="images" [numVisible]="3" [numScroll]="3" [circular]="false" *ngIf="images">
+    <ng-template let-image pTemplate="item">
+      <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+        <div class="mb-3">
+          <img src="{{image.url}}" [alt]="image.name" class="w-6 shadow-2"/>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

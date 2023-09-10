@@ -1,0 +1,25 @@
+p {
+  font-weight: 600;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 10px;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+p-carousel {
+  margin: 15px;
+}
+
+.w-6 {
+  max-width: 90%;
+  height: 300px;
+  border-radius: 20px;
+}
+.mb-3{
+  display: flex;
+  justify-content: center;
+}
